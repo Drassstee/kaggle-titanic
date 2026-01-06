@@ -1,2 +1,3 @@
 # Kaggle-titanic-ai
-right now: bad, 0.78468
+Score in kaggle: 0.80861
+nickname: drassstee
