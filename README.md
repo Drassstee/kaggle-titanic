@@ -6,6 +6,8 @@ Python version 3.8 or higher
 requirements.txt does not contain versions for dependencies.  
 Because different versions of dependencies are needed for different Python versions.
 ## How to run
+Both commands below create the virtual environment, install needed dependencies, etc.  
+So you do not need to do anything (i am making your life easier).
 ### notebook
 ```bash
 make analysis
