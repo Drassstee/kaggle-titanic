@@ -41,7 +41,7 @@ $(V_NAME):
 
 analysis: setup
 	@echo "Opening Analysis Notebook..."
-	@$(call fix_path,$(V_JUP)) notebook notebook/main.ipynb --port 8891 --NotebookApp.token='' --NotebookApp.password=''
+	@$(call fix_path,$(V_JUP)) notebook notebook/EDA.ipynb --port 8891 --NotebookApp.token='' --NotebookApp.password=''
 
 pipeline: setup
 	@echo "Running Pipeline..."
