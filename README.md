@@ -1,6 +1,9 @@
 # Kaggle-titanic-ai
 Score in kaggle: 0.81818
 nickname: drassstee
+The aim of the project is simple. You just need to predict who would die(well, died...) when titanic crashed.  
+You must implement features which can help with the prediction. Then train the model with these features and predict the outcome.
+Send the predictions(csv file) to a kaggle competition platform and get the score.
 ## Setup
 Python version 3.8 or higher  
 requirements.txt does not contain versions for dependencies because different Python versions require different versions of dependencies.  
@@ -29,3 +32,20 @@ They are not needed for the audit. The only score which is needed is kaggle scor
 Here's the link: https://www.kaggle.com/competitions/titanic/leaderboard?search=drassstee  
 Min. score required to pass the audit: 78.9  
 My score: 0.81818
+### Feature Engineering
+This is just a copy of explanation in my notebook:  
+The features that contributed the most:  
+Family_Survival and Surname_Count  
+Families generally had a higher chance of survival(because of children, etc).  
+The chance was even higher for those who had a better PClass.  
+Overall, the feature was created with the assumption that people with  
+similar surnames and/or fares_range would be a family, thus, they would have a better  
+chance of survival. It worked perfectly. Before this feature, i had features  
+Alone/Family_size which helped me to increase my score to 77-78.7, but it was not enough.  
+By combining these features with newly created surnames and fares_new(it is just mapping based on range),  
+the new feature, Family_Survival was created and raised my score to 80+.  
+Surname_Count is a similar feature. It just counts the same surnames with mapping(the assumption was families would have a higher chance of survival  
+and rich families generally had higher chances). It raised my score to 0.81818.  
+
+By the way, i did not come up with this myself. I read one comment in Kaggle with the content:   
+"The guy raised his score to 83+ just by extracting the surnames". So it helped me.  
