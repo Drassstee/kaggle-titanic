@@ -6,7 +6,7 @@ Python version 3.8 or higher
 requirements.txt does not contain versions for dependencies because different Python versions require different versions of dependencies.  
 The problem could be solved with conda and its .yml file, but you would need to install it beforehand.  
 Thus, i use simple virtual environment which does not need external installing.  
-The virtual environment was not included in repository because its size is too much (it is a bad practice to include it).
+The virtual environment was not included in repository because its size is too large (it is a bad practice to include it).
 ## How to run
 Both commands below create the virtual environment, install needed dependencies, etc.  
 So you do not need to do anything (i am making your life easier).
